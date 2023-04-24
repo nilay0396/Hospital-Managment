@@ -76,6 +76,10 @@ body, figure, h1, h2, h3, p, input, textarea, form {
   .feature-box img {
     max-width: 10%;
   }
+
+  .contact img{
+    max-width: 10%;
+  }
   
   .container .feature-box h3 {
     font-size: 1.5rem;
@@ -117,6 +121,72 @@ body, figure, h1, h2, h3, p, input, textarea, form {
   .container input[type="submit"]:hover {
     background-color: #0056b3;
   }
+  /* Add styles for testimonials */
+.testimonials {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  }
+  
+  .testimonials .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+  
+  .testimonial {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  }
+  
+  .testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  }
+  
+  .testimonial p {
+  font-size: 16px;
+  color: #777;
+  }
+  
+  .testimonial cite {
+  font-size: 14px;
+  color: #444;
+  }
+  
+  /* Add styles for social media */
+  .social {
+  background-color: #007bff;
+  padding: 20px 0;
+  }
+  
+  .social .container {
+  text-align: center;
+  }
+  
+  .social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+  }
+  
+  .social-links img{
+    display: inline;
+    max-width: 30%;
+  }
+
   
   /* Style the footer */
   footer {
