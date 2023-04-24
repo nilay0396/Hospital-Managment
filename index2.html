@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Management</title>
+  <!-- Add Bootstrap and Font Awesome CSS CDNs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Add custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    .jumbotron {
+      background-color: #337ab7;
+      color: #fff;
+      padding: 80px;
+      margin-bottom: 0;
+    }
+
+    .jumbotron h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .jumbotron p {
+      font-size: 20px;
+    }
+
+    .features {
+      padding: 80px 0;
+      background-color: #f8f9fa;
+    }
+
+    .features h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .feature-item {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .feature-item img {
+      max-width: 100px;
+      margin-bottom: 20px;
+    }
+
+    .feature-item h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .feature-item p {
+      font-size: 16px;
+    }
+
+    .testimonials {
+      padding: 80px 0;
+    }
+
+    .testimonials h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .testimonial {
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .testimonial img {
+      max-width: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .testimonial p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .testimonial cite {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .social {
+      padding: 60px 0;
+      background-color: #337ab7;
+      color: #fff;
+    }
+
+    .social h2 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .social-links {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .social-links li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .social-links li a {
+      color: #fff;
+      font-size: 24px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .social-links li a:hover {
+      color: #ffca08;
+      text-decoration: none;
+    }
+
+    #contact {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+    }
+
+    #contact-list{
+        list-style: none;
+    }
+/* #contact h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+} */
+/* CSS styles for beautifying the container */
+.container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #ffca08;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.hero {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+</style>
+
+</head>
+
+<body>
+  <!-- Add your HTML code here -->
+
+  <div class="jumbotron text-center">
+    <h1>Welcome to Hospital Management System</h1>
+    <p>Get the best healthcare services</p>
+  </div>
+  <div class="hero">
+    <section class="hero">
+        <div class="container">
+          <h2>Manage Your Hospital Efficiently</h2>
+          <p>Streamline your hospital operations with our comprehensive management solution.</p>
+          <a href="#contact" class="cta-btn">Get Started</a>
+        </div>
+      </section>
+  </div>
+
+  <div class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="feature-item">
+            <img src="images/f1.svg" alt="Feature 1">
+            <h3>Appointment Scheduling</h3>
+            <p>Book appointments online with ease and convenience.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <img src="images/f2.svg" alt="Feature 2">
+            <h3>Medical Records</h3>
+            <p>Access and manage your medical records securely online.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <img src="images/f3.svg" alt="Feature 3">
+            <h3>Prescription Requests</h3>
+            <p>Request prescription refills online for your convenience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonials">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="images/testimonial1.png" alt="Testimonial 1">
+            <p>"The Hospital Management System has made it so much easier for me to manage my appointments and
+              communicate with my healthcare provider. Highly recommended!"</p>
+            <cite>- John Doe</cite>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="images/testimonial2.png" alt="Testimonial 2">
+            <p>"I love the convenience of being able to request prescription refills online. The system is
+              user-friendly and saves me a lot of time and effort."</p>
+            <cite>- Jane Smith</cite>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="testimonial">
+            <img src="images/testimonial1.png" alt="Testimonial 3">
+            <p>"The Hospital Management System has made managing my medical records so much more convenient. I can access them securely online
+                anytime, anywhere."</p>
+              <cite>- Mark Johnson</cite>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <p>If you have any questions or inquiries, please feel free to contact us.</p>
+              <ul id="contact-list">
+                <li><i class="fas fa-map-marker-alt"> </i>  1234 Main St, Springfield, IL 62704</li>
+                <li><i class="fas fa-phone"> </i>  (555) 555-5555</li>
+                <li><i class="fas fa-envelope"></i>  info@hospitalmanagementsystem.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <form class="contact-form" action="/contact" method="post">
+              <input type="text" name="name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <footer class="footer">
+      
+        <p>&copy; 2023 Hospital Management System. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a
+            href="#">Terms of Use</a></p>
+    
+    </footer>
+  
+  </body>
+  
+  </html>
+  
